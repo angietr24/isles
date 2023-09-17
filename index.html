@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Implementando contenedor, filas y columnas</title>
+</head>
+<body>
+
+<header class="header">
+    <h1 class="titulo text-center m-5 textuppercase">Enchated Isles</h1>
+    <nav class="navbar navbar-expand-lg bg-primary ">
+        <div class="container">
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Quienes somos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Menú
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Mision</a></li>
+                  <li><a class="dropdown-item" href="#">Vision</a></li>
+                  <li><hr class="dropdown-divider">FAQ</li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+</header>
+
+<section class="slider">
+
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="false">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/descarga (1).jpg" class="d-block w-100" alt="800px">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>𝓔𝓷𝓬𝓱𝓪𝓷𝓽𝓮𝓭 𝓘𝓼𝓵𝓮𝓼</h5>
+          <p>𝓣𝓾 𝓯𝓮𝓵𝓲𝓬𝓲𝓭𝓪𝓭 𝓮𝓷 𝓷𝓾𝓮𝓼𝓽𝓻𝓪𝓼 𝓶𝓪𝓷𝓸𝓼</p>
+        </div>
+      </div>
+     
+      <div class="carousel-item">
+        <img src="img/Light ambiance for buffet.jpg" class="d-block w-100" alt="800px">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>𝓔𝓷𝓬𝓱𝓪𝓷𝓽𝓮𝓭 𝓘𝓼𝓵𝓮𝓼</h5>
+          <p>𝒞𝓇𝑒𝒶𝓃𝒹𝑜 𝓁𝑜𝓈 𝓂𝑒𝒿𝑜𝓇𝑒𝓈 𝓇𝑒𝒸𝓊𝑒𝓇𝒹𝑜𝓈</p>
+        </div>
+      </div>
+     
+      <div class="carousel-item">
+        <img src="img/Room Info & Rates.jpg" class="d-block w-100" alt="800px">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>𝓔𝓷𝓬𝓱𝓪𝓷𝓽𝓮𝓭 𝓘𝓼𝓵𝓮𝓼</h5>
+          <p>𝓤𝓷 𝓵𝓾𝓰𝓪𝓻 𝓮𝓷 𝓮𝓵 𝓹𝓪𝓻𝓪í𝓼𝓸</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div> 
+</section>
+
+<section class="categorias">
+<div class="container">
+  <h1 class="m-5 text-center"> Nuestras Categorias</h1>
+  <div class="row">
+    <div class="col-sm-12 col-md-4">
+      <div class="card" >
+        
+        <img src="img/stay in your very own treehouse in the jungle.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Hospedaje</h5>
+          <p class="card-text">Encuentra las mejores ofertas, todo a tu comodidad.</p>
+          <a href="#" class="btn btn-primary w-100">Ver ofertas</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-4">
+      <div class="card" >
+        
+        <img src="img/descarga (2).jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Buffet</h5>
+          <p class="card-text">Comida preparada por las mejores manos.</p>
+          <a href="#" class="btn btn-primary w-100">Ver ofertas</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-12 col-md-4">
+      <div class="card" >
+        
+        <img src="img/descarga (4).jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Eventos</h5>
+          <p class="card-text">Reserva espacios para celebrar tus eventos.</p>
+          <a href="#" class="btn btn-primary w-100">Ver ofertas</a>
+        </div>
+      </div>
+
+
+</section>
+
+<section class="banner">
+  .<div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h3>Nuestro lugar</h3>
+        <p>En armonia con la naturaleza</p>
+        <a href="#"class="btn btn-success">Como llegar</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    VER DESCUENTOS
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">15%</a></li>
+    <li><a class="dropdown-item" href="#">30%</a></li>
+    <li><a class="dropdown-item" href="#">otros...</a></li>
+  </ul>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

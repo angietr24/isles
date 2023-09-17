@@ -1,0 +1,77 @@
+.header .bg-primary {
+    background-color: rgb(167, 111, 79) !important;
+    max-height: 120px;
+}
+
+.navbar-expand-lg{
+    max-height: 120px;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link  {
+    color: white;
+}
+
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    color: white;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-brand {
+    color: white;
+}
+
+
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    background-color: none;
+    border: 2px solid white;
+    color: white;
+}
+
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) :hover {
+    background-color:none ;
+    border: 2px solid rgb(253, 248, 248);
+    color: white;
+}
+
+.titulo {
+    font-weight: 900;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* slider o carrusel*/
+
+.slider .carousel-inner .carousel-item
+{
+    height: 1000px;
+    background-size: cover;
+}
+
+/*cambiar los caption de los titulos*/
+.carousel-item .carousel-caption h5{
+    background: rgb(185, 117, 117);
+    font-size:3rem ;
+}
+
+/*cambiar card*/
+.card-body .btn.btn-primary{
+    background-color: rgb(209, 111, 135) !important;
+    border: 1px solid rgb(20, 19, 11);
+}
+
+.banner {
+    background: url("/img/uhm.jpg") ;
+    height: 400px;
+    position: relative;
+}
+
+.banner::after{
+    content: "";
+    background: linear-gradient(to top,##e484e4 );
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
